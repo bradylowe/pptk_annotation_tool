@@ -117,18 +117,6 @@ class PointCloud:
     def __load_ply_file(self, filename):
         points = o3d.io.read_point_cloud(filename)
         self.points = self.points.append(self.__from_open3d_point_cloud(points), sort=False)
-        """
-        import plyfile
-        data = plyfile.PlyData.read(filename)
-        new_df = pd.DataFrame()
-        new_df['x'] = data.elements[0]['x']
-        new_df['y'] = data.elements[0]['y']
-        new_df['z'] = data.elements[0]['z']
-        new_df['user_data'] = np.array(data.elements[0]['confidence'] * 255.0, dtype=int)
-        new_df['intensity'] = np.array(data.elements[0]['intensity'] * 255.0, dtype=int)
-        new_df['class'] = np.zeros(len(new_df), dtype=int)
-        self.points = self.points.append(new_df, sort=False)
-        """
 
     def __load_xyz_file(self, filename):
         """
