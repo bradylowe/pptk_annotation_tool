@@ -468,8 +468,8 @@ class PointCloud:
         """
         if mask is None:
             mask = self.get_highlighted_mask()
-        if overwrite:
-            mask.intersection(self.points['class'] > 0)
+        if not overwrite:
+            mask.intersection(self.points['class'] == 0)
         self.points.loc[mask.bools, 'class'] = cls
         self.render(showing=True)
 
