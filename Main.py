@@ -45,11 +45,8 @@ if __name__ == "__main__":
     from PointCloud import PointCloud
     import numpy as np
     import pandas as pd
-    import algorithms.Features as feat
-    import algorithms.Classification as cls
-    import algorithms.Clustering as cl
-    import algorithms.knn as knn
-    from data.Voxelize import VoxelGrid
+    import knn as knn
+    from Voxelize import VoxelGrid
     import pptk
 
     pc = PointCloud(opt.file, opt.point_size, opt.max_points, opt.render)
