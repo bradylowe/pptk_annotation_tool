@@ -1,9 +1,9 @@
-# PointBluePython
+# pptk_annotation_tool
 
 This repo implements algorithms for converting Point Cloud scans of warehouse rooms into 
 blueprints of those rooms. The goal is to locate important objects such as walls, floor, ceiling, 
 support poles, door frames, racks, pallets, etc for the purpose of virtualizing and visualizing the
-warehouse.
+warehouse (for example). This code is centered around the [PPTK library](https://github.com/heremaps/pptk).
 
 ## Examples
 
