@@ -5,6 +5,23 @@ blueprints of those rooms. The goal is to locate important objects such as walls
 support poles, door frames, racks, pallets, etc for the purpose of virtualizing and visualizing the
 warehouse.
 
+## Examples
+
+An example video of the use of this code is found [here](https://youtu.be/3pG60swmxvM). Below are a couple clips 
+from the video linked here.
+
+![](images/pptk_floor_ceiling_walls.gif)
+
+The GIF above shows the user annotating the walls, floor, and ceiling of a room.
+
+![](images/pptk_walls_noise.gif)
+
+The GIF above shows the user rendering only the wall points, and relabelling some points as noise.
+
+![](images/pptk_rack.gif)
+
+The GIF above shows the user rendering a single rack and labeling the poles, pallets, rack, etc in the scene.
+
 ## Requirements
 
 0) python - Versions 3.5+ are currently supported (it may be difficult to install pptk with python 3.8)
