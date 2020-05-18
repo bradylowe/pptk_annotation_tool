@@ -32,9 +32,8 @@ The GIF above shows the user rendering a single rack and labeling the poles, pal
 5) Annoy - Used to calculate nearest neighbor information in point cloud (not necessary per se)
 6) scipy - Used to calculate nearest neighbor information in the point cloud
 7) code - Used to enter interactive sessions from python scripts
-8) hdbscan - Used as a clustering algorithm (point segmentation)
-9) pandas - Used along with numpy to efficiently manipulate and store point cloud data structures
-10) sklearn - Used for KMeans algorithm for another point clustering method
+8) pandas - Used along with numpy to efficiently manipulate and store point cloud data structures
+9) sklearn - Used for KMeans algorithm for another point clustering method
 
 If you want to read/write directly from/to zipped laz files, then you will need to have installed the laszip
 command line tool.
